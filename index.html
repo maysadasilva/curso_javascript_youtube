@@ -10,20 +10,22 @@
     <div class="container">
 
     <h1 id="curso">Curso JavaScipt</h1>
-    <p> Personalizando uma saudação utilizando JavaScipt</p>
+    <p> Personalizando uma saudação utilizando JavaScipt!</p>
 
-    <div class=saudacao> Olá, visitante!</div>
+    <div class=saudacao id="mensagem"> Olá, visitante!</div>
+    <button onclick="mudarNome()">Personalizar saudação</button>
+    
+    </div>
+
     <script>
-        let nome = "Maysa";
-        nome = "Sandra"
-       document.getElementById('curso').textContent = 'Olá, ' + nome + '!';
-        
-
-
+      
+        function mudarNome(){
+            let nome
+            nome = "Maysa"
+            document.getElementById('mensagem').textContent = 'Olá, ' + nome + '!';
+        }
     </script>
 
 
-
-    </div>
 </body>
 </html>
